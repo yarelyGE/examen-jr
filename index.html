@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Spotify</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body class="bg-dark">
+        <!--Nav bar-->
+        <nav class="flex-row d-flex navbar navbar-expand-lg bg-dark">
+            <div class="col-sm-9 ps-4">
+                <img src="./img/spotify-logo-branca-white.png" class="logo">
+                <span class="chevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="item" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </span>
+                <span class="chevron-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="item" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="flex-row d-flex ps-5 pe-0 col-sm-3 float-end me-2">
+                <button class="btn fw-bold bt-register">Registrarse</button>
+                <button class="btn btn-start fw-bold">Iniciar sesión</button>
+            </div>
+        </nav>
+
+        <!--Body-->
+        <div class="d-flex flex-row h-100">
+
+            <!--Sidebar-->
+            <div class="bg-dark col-2 h-100">
+                <ul class="nav nav-pills flex-column mb-auto ms-4 mt-4">
+                    <li class="nav-item item my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                        </svg> Inicio
+                    </li>
+                    <li class="nav-item item my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg> Buscar
+                    </li>
+                    <li class="nav-item item my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
+                            <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"/>
+                            <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"/>
+                        </svg> Biblioteca
+                    </li>
+                </ul> 
+                <ul class="nav nav-pills flex-column mb-auto ms-4 mt-4">
+                    <li class="nav-item item my-3 item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                        </svg>
+                        Crear playlist
+                    </li>
+                    <li class="nav-item item my-3 item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        </svg>
+                        Tus me gusta
+                    </li>
+                </ul>
+            </div>
+    
+            <!--Contenido-->
+            <div class="bg-container col-10 h-100 py-3">
+                <div class="d-flex flex-row ps-5">
+                    <p class="col-6 text-white fs-5 fw-bold">Enfoque</p>
+                    <p class="col-6 text-white float-end font-monospace p-left">Mostrar todo</p>
+                </div>
+                
+                <div class="row ps-4 pt-3 me-3">
+                    <div class=" container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/piano.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Peaceful Piano</p>
+                                <p class="card-text description-card">Relax and indulge with beautify piano pieces.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/aurora.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Deep Focus</p>
+                              <p class="card-text description-card">Keep calm and focus with ambient and rock.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/instrumental.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Instrumental Study</p>
+                              <p class="card-text description-card">Focus with soft study music the background.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/study.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Chill loft study beats</p>
+                              <p class="card-text description-card">The perfect study beats. Find your focus.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/jazz.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Jazz Vibes</p>
+                              <p class="card-text description-card">The original instrumental playlist</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row ps-5 mt-4">
+                    <p class="col-6 text-white fs-5 fw-bold">Spotify Playlists</p>
+                    <p class="col-6 text-white float-end font-monospace p-left">Mostrar todo</p>
+                </div>
+                
+                <div class="row ps-4 pt-3 me-3">
+                    <div class=" container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/pop.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Pop</p>
+                                <p class="card-text description-card">Relax and indulge with beautify piano pieces.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/rap.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Rap Caviar</p>
+                              <p class="card-text description-card">Keep calm and focus with ambient and rock.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/cat.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Instrumental Cat</p>
+                              <p class="card-text description-card">Focus with soft study music the background.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/rock.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Chill loft study beats</p>
+                              <p class="card-text description-card">The perfect study beats. Find your focus.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/cards/hits.jpg" class="card-img-top img-card" alt="...">
+                            <div class="card-body">
+                                <p class="fw-bold">Jazz Vibes</p>
+                              <p class="card-text description-card">The original instrumental playlist</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <!--Pie de página-->
+        <footer class="footer p-2">
+            <div class="d-flex flex-row">
+                <div class="ps-3">
+                    <p class=" mb-0 text-uppercase">Muestra de Spotify</p>
+                    <p class=" mt-0">Regístrate para accedes a canciones y podcast ilimitados con algunos anuncios. No necesitas tarjeta de crédito.</p>
+                </div>
+                <div class="btn-footer pt-2">
+                    <button class="btn btn-start fw-bold">Registrarse gratis</button>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

@@ -1,0 +1,124 @@
+.container{
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.footer{
+    background: linear-gradient(to right, blue, pink);
+    height: 65px;
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+.btn-footer{
+    padding-left: 25%;
+}
+
+.float-end  {
+    float: right !important;
+}
+
+.btn-start{
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.bt-register{
+    background-color: black;
+    color: white;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+.logo{
+    width: 10%;
+    height: 5%;
+}
+
+.item{
+    color: white;
+}
+
+.bg-container{
+    background-color: #1F1F1F;
+}
+
+.p-left{
+padding-left: 30%;
+}
+
+.container-card{
+    width: 20%;
+}
+
+.scroll{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.card{
+    width: 200px !important;
+    height: 300px;
+    background-color: #181818;
+    color: white;
+}
+
+.description-card{
+    color: #929292;
+}
+
+.img-card{
+    width: 200px;
+    height: 200px;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15
+{
+    position: relative;
+    min-height: 1px; 
+}
+.col-xs-15{
+    width: 20%;
+    float: left;
+}
+
+.chevron{
+    margin-left: 150px;
+}
+
+.chevron-right{
+    margin-left: 15px;
+}
+
+@media (min-width: 768px)
+{
+    .col-sm-15
+    {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px)
+{
+    .col-md-15
+    {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1350px)
+{
+    .col-lg-15
+    {
+        width: 20%;
+        float: left;
+    }
+}
